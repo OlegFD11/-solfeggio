@@ -1,0 +1,58 @@
+.Menu {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #a4a6b3;
+  font-size: 19px;
+}
+
+.Menu {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+  }
+
+  li {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #a4a6b3;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+    font-family: Open Sans, Microsoft YaHei, 微软雅黑, PingFang SC,
+      Hiragino Sans GB, Heiti SC, sans-serif;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+  }
+
+  a:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    display: block;
+    height: 3px;
+    background-color: #f67d28;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  a:hover:after {
+    bottom: 0;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  // a.active:after {
+  //   bottom: 0;
+  //   opacity: 1;
+  //   transition: all 0.5s;
+  // }
+}
+
+// TODO: активный клас при переключении в двух меню

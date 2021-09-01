@@ -1,0 +1,54 @@
+.Navigation-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #a4a6b3;
+  font-size: 19px;
+}
+
+.Navigation-menu {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #a4a6b3;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s;
+    font-family: Open Sans, Microsoft YaHei, 微软雅黑, PingFang SC,
+      Hiragino Sans GB, Heiti SC, sans-serif;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  a.active {
+    color: #fff;
+    background-color: #f67d28;
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+
+  a.active:hover {
+    color: #fff;
+    background-color: #f67d28;
+    transition: all 0.3s;
+  }
+}
